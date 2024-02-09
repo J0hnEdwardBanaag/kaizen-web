@@ -1,7 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
 import Header from '../component/Header';
 
 function MainPageSection1() {
@@ -35,129 +32,13 @@ function MainPageSection1() {
   );
 };
 
-function MainPageSection2() {
-
-  return (
-    <div class="container mx-auto px-6 py-12">
-      <p class="mt-4 text-4xl font-extrabold tracking-tight text-slate-900 text-center">About Us</p>
-      <h1 class="text-3xl font-medium text-center mb-12">Our Global Team</h1>
-      <div class="grid  md:grid-cols-2 gap-6">
-        <div class="bg-white rounded shadow p-6">
-          <h2 class="text-2xl font-medium mb-4">Who We Are</h2>
-          <p class="text-gray-600">We are a team of dedicated professionals who are passionate about building great products. A organization composed of diverse talents in areas of engineering, programming, user interface design, and analytics.</p>
-          <div class="mt-6"><a class="text-base font-semibold text-indigo-600 hover:text-indigo-700" href="/components">Learn More<span aria-hidden="true">→</span></a></div>
-        </div>
-        <div class="bg-white rounded shadow p-6">
-          <h2 class="text-2xl font-medium mb-4">Our Mission</h2>
-          <p class="text-gray-600">Our mission is to provide our customers with the best possible experience by creating high-quality, user-friendly products.</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-function ProductAndServices() {
-  return (
-    <div class="bg-gray-100"> <div class="container mx-auto px-6 py-12"> <h1 class="text-3xl font-medium text-center mb-12">Our Products and Services</h1> <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> <div class="bg-white rounded shadow p-6"> <h2 class="text-2xl font-medium mb-4">Product 1</h2> <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p> </div> <div class="bg-white rounded shadow p-6"> <h2 class="text-2xl font-medium mb-4">Product 2</h2> <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p> </div> <div class="bg-white rounded shadow p-6"> <h2 class="text-2xl font-medium mb-4">Service 1</h2> <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p> </div> <div class="bg-white rounded shadow p-6"> <h2 class="text-2xl font-medium mb-4">Service 2</h2> <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p> </div> <div class="bg-white rounded shadow p-6"> <h2 class="text-2xl font-medium mb-4">Service 3</h2> <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p> </div> </div> </div> </div>
-  );
-}
-
-function Contact() {
-  return (
-    <div class="bg-white">
-      <div class="container mx-auto px-6 py-12">
-        <h1 class="text-3xl font-medium text-center mb-12">Contact Us</h1>
-        <form class="w-full max-w-xl mx-auto">
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-              <label class="block uppercase tracking-wide text-gray-700 text-xs font-medium mb-2" for="first-name"> First Name </label>
-              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="first-name" type="text" />
-            </div>
-            <div class="w-full md:w-1/2 px-3" >
-              <label class="block uppercase tracking-wide text-gray-700 text-xs font-medium mb-2" for="last-name"> Last Name </label>
-              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="last-name" type="text" />
-            </div>
-          </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
-              <label class="block uppercase tracking-wide text-gray-700 text-xs font-medium mb-2" for="email"> Email </label> <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" type="email" />
-              <p class="text-gray-600 text-xs italic">Please enter a valid email address.</p>
-            </div>
-          </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
-              <label class="block uppercase tracking-wide text-gray-700 text-xs font-medium mb-2" for="message"> Message </label>
-              <textarea class="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-48 resize-none" id="message"></textarea>
-              <p class="text-gray-600 text-xs italic">Please enter your message.</p>
-            </div>
-          </div>
-          <div class="md:flex md:items-center">
-            <div class="md:w-1/3">
-              <button class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline-blue focus:outline-none text-white font-bold py-2 px-4 rounded" type="button"> Send Message
-              </button>
-            </div>
-            <div class="md:w-2/3">
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-}
-
-function Footer() {
-  return (<footer class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-wrap">
-        <div class="w-full md:w-1/4 text-center md:text-left">
-          <h2 class="text-white text-lg mb-4 font-bold">Company</h2>
-          <ul class="list-reset text-white text-sm leading-relaxed">
-            <li class="mb-2">About Us</li>
-            <li class="mb-2">Contact Us</li>
-            <li class="mb-2">Privacy Policy</li>
-            <li class="mb-2">Terms of Service</li>
-          </ul>
-        </div>
-        <div class="w-full md:w-1/4 text-center md:text-left">
-          <h2 class="text-white text-lg mb-4 font-bold">Products</h2>
-          <ul class="list-reset text-white text-sm leading-relaxed">
-            {/* <li class="mb-2">Product 1</li>
-            <li class="mb-2">Product 2</li>
-            <li class="mb-2">Product 3</li>
-            <li class="mb-2">Product 4</li> */}
-          </ul>
-        </div>
-        <div class="w-full md:w-1/4 text-center md:text-left">
-          <h2 class="text-white text-lg mb-4 font-bold">
-            Support</h2>
-        </div>
-        <div class="w-full md:w-1/4 text-center md:text-left">
-          <h2 class="text-white text-lg mb-4 font-bold">Follow Us</h2>
-          <ul class="list-reset text-white text-sm leading-relaxed">
-            <li class="mb-2"> <a class="underline text-gray-400 hover:text-gray-200" href="#">Facebook</a> </li>
-            <li class="mb-2"> <a class="underline text-gray-400 hover:text-gray-200" href="#">Twitter</a> </li>
-            <li class="mb-2"> <a class="underline text-gray-400 hover:text-gray-200" href="#">Instagram</a> </li>
-            <li class="mb-2"> <a class="underline text-gray-400 hover:text-gray-200" href="#">LinkedIn</a> </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>);
-}
-
-
-
-// function ProductAndServices(){
-//   return(<div></div>);
-// }
-
 function App() {
   return (
     <>
       <Header />
       <br />
       <MainPageSection1 />
-      <br />
+      {/* <br />
       <br />
       <br />
       <MainPageSection2 />
@@ -166,7 +47,7 @@ function App() {
       <br />
       <Contact />
       <br />
-      <Footer />
+      <Footer /> */}
       {/* <div className="text-9xl py-4 border-b border-slate-900/10 ">
         <a className="text-xl font-semibold text-gray-900 hover:text-sky-500 dark:hover:text-sky-400">
           Testing
@@ -180,3 +61,206 @@ function App() {
 }
 
 export default App;
+
+// import { Fragment, useState } from 'react'
+// import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+// import {
+//   ArrowPathIcon,
+//   Bars3Icon,
+//   ChartPieIcon,
+//   CursorArrowRaysIcon,
+//   FingerPrintIcon,
+//   SquaresPlusIcon,
+//   XMarkIcon,
+// } from '@heroicons/react/24/outline'
+// import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+
+// const products = [
+//   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+//   { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+//   { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+//   { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+//   { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+// ]
+// const callsToAction = [
+//   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
+//   { name: 'Contact sales', href: '#', icon: PhoneIcon },
+// ]
+
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(' ')
+// }
+
+// export default function Example() {
+//   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+//   return (
+//     <header className="bg-white">
+//       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+//         <div className="flex lg:flex-1">
+//           <a href="#" className="-m-1.5 p-1.5">
+//             <span className="sr-only">Your Company</span>
+//             <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+//           </a>
+//         </div>
+//         <div className="flex lg:hidden">
+//           <button
+//             type="button"
+//             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+//             onClick={() => setMobileMenuOpen(true)}
+//           >
+//             <span className="sr-only">Open main menu</span>
+//             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+//           </button>
+//         </div>
+//         <Popover.Group className="hidden lg:flex lg:gap-x-12">
+//           <Popover className="relative">
+//             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+//               Product
+//               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+//             </Popover.Button>
+
+//             <Transition
+//               as={Fragment}
+//               enter="transition ease-out duration-200"
+//               enterFrom="opacity-0 translate-y-1"
+//               enterTo="opacity-100 translate-y-0"
+//               leave="transition ease-in duration-150"
+//               leaveFrom="opacity-100 translate-y-0"
+//               leaveTo="opacity-0 translate-y-1"
+//             >
+//               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+//                 <div className="p-4">
+//                   {products.map((item) => (
+//                     <div
+//                       key={item.name}
+//                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+//                     >
+//                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+//                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+//                       </div>
+//                       <div className="flex-auto">
+//                         <a href={item.href} className="block font-semibold text-gray-900">
+//                           {item.name}
+//                           <span className="absolute inset-0" />
+//                         </a>
+//                         <p className="mt-1 text-gray-600">{item.description}</p>
+//                       </div>
+//                     </div>
+//                   ))}
+//                 </div>
+//                 <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+//                   {callsToAction.map((item) => (
+//                     <a
+//                       key={item.name}
+//                       href={item.href}
+//                       className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+//                     >
+//                       <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+//                       {item.name}
+//                     </a>
+//                   ))}
+//                 </div>
+//               </Popover.Panel>
+//             </Transition>
+//           </Popover>
+
+//           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+//             Features
+//           </a>
+//           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+//             Marketplace
+//           </a>
+//           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+//             Company
+//           </a>
+//         </Popover.Group>
+//         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+//           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+//             Log in <span aria-hidden="true">&rarr;</span>
+//           </a>
+//         </div>
+//       </nav>
+//       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+//         <div className="fixed inset-0 z-10" />
+//         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+//           <div className="flex items-center justify-between">
+//             <a href="#" className="-m-1.5 p-1.5">
+//               <span className="sr-only">Your Company</span>
+//               <img
+//                 className="h-8 w-auto"
+//                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+//                 alt=""
+//               />
+//             </a>
+//             <button
+//               type="button"
+//               className="-m-2.5 rounded-md p-2.5 text-gray-700"
+//               onClick={() => setMobileMenuOpen(false)}
+//             >
+//               <span className="sr-only">Close menu</span>
+//               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+//             </button>
+//           </div>
+//           <div className="mt-6 flow-root">
+//             <div className="-my-6 divide-y divide-gray-500/10">
+//               <div className="space-y-2 py-6">
+//                 <Disclosure as="div" className="-mx-3">
+//                   {({ open }) => (
+//                     <>
+//                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+//                         Product
+//                         <ChevronDownIcon
+//                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
+//                           aria-hidden="true"
+//                         />
+//                       </Disclosure.Button>
+//                       <Disclosure.Panel className="mt-2 space-y-2">
+//                         {[...products, ...callsToAction].map((item) => (
+//                           <Disclosure.Button
+//                             key={item.name}
+//                             as="a"
+//                             href={item.href}
+//                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+//                           >
+//                             {item.name}
+//                           </Disclosure.Button>
+//                         ))}
+//                       </Disclosure.Panel>
+//                     </>
+//                   )}
+//                 </Disclosure>
+//                 <a
+//                   href="#"
+//                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+//                 >
+//                   Features
+//                 </a>
+//                 <a
+//                   href="#"
+//                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+//                 >
+//                   Marketplace
+//                 </a>
+//                 <a
+//                   href="#"
+//                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+//                 >
+//                   Company
+//                 </a>
+//               </div>
+//               <div className="py-6">
+//                 <a
+//                   href="#"
+//                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+//                 >
+//                   Log in
+//                 </a>
+//               </div>
+//             </div>
+//           </div>
+//         </Dialog.Panel>
+//       </Dialog>
+//     </header>
+//   )
+// }
