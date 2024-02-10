@@ -18,3 +18,4 @@ https://headlessui.com/react/
 https://github.com/tailwindlabs/heroicons
 
 
+Tailwind BG Gradient generator: https://tailwind-gradient-generator.vercel.app/gradient?colors=cyan-300,transparent-100,none-100&direction=BR 
