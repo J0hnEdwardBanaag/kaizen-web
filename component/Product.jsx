@@ -1,9 +1,8 @@
-import prod1A from '../public/products/Product1_A.jpg';
 
 const products = [
-    { name: 'Data Collection', description: 'We provide state-of-the art sensors to validate the data being collected', href: '#', img: "/public/products/Product1_A.jpg" },
-    { name: 'Data Analysis', description: 'We have real-time standard and customized reports that analyze the collected data and provide you with solid bases to support your actions and decisions.', href: '#', img: "/public/products/Product1_B.jpg" },
-    { name: 'Data Metrics', description: 'We also have standard metrics that you can access real-time, and if needed, we can configure additional operational data points specific to your business', href: '#', img: "/public/products/Product1_C.jpg" },
+    { name: 'Data Collection', description: 'We provide state-of-the art sensors to validate the data being collected', href: '#', img: "./src/assets/products/Product1_A.jpg" },
+    { name: 'Data Analysis', description: 'We have real-time standard and customized reports that analyze the collected data and provide you with solid bases to support your actions and decisions.', href: '#', img: "./src/assets/products/Product1_B.jpg" },
+    { name: 'Data Metrics', description: 'We also have standard metrics that you can access real-time, and if needed, we can configure additional operational data points specific to your business', href: '#', img: "./src/assets/products/Product1_C.jpg" },
     { name: 'Product 4', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. ', href: '#', img: 'https://dkmetrics.com/wp-content/uploads/2017/06/bgwhydkm-150x150.jpg' },
     { name: 'Product 5', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. ', href: '#', img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80' },
 ]
