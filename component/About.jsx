@@ -4,10 +4,10 @@ function About() {
     const [isVisible, setIsVisible] = useState(false);
 
     return (
-        <div class="container mx-auto px-6 py-12">
+        <div class="container mx-auto px-6 py-12" id="about">
             <div className="text-center">
                 <p class="mt-4 text-4xl font-extrabold tracking-tight text-slate-900 ">About Us</p>
-                <p class="text-sm font-medium  mb-12 text-slate-500 ">Our Global Team</p>
+                <p class="text-sm font-medium  mb-12 text-gray-500 ">Our Global Team</p>
             </div>
             <div class="grid  md:grid-cols-2 gap-6">
                 <div class="flex flex-col bg-white rounded shadow p-6">

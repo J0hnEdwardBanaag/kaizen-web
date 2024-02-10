@@ -20,17 +20,17 @@ function Footer() {
                 <br />
                 <div class="pr-2">
                     <h3 class="text-lg font-bold mb-2">
-                        <a className="text-slate-800 hover:text-sky-300" href="">About Us</a>
+                        <a className="text-slate-800 hover:text-sky-300" href="#about">About Us</a>
                     </h3>
                 </div>
                 <div class="pr-2">
                     <h3 class="text-lg font-bold mb-2">
-                        <a className="text-slate-800 hover:text-sky-300" href="">Blog</a>
+                        <a className="text-slate-800 hover:text-sky-300" href="#">Blog</a>
                     </h3>
                 </div>
                 <div class="pr-2">
                     <h3 class="text-lg font-bold mb-2">
-                        <a className="text-slate-800 hover:text-sky-300" href="">Contact & Support</a>
+                        <a className="text-slate-800 hover:text-sky-300" href="#contact">Contact & Support</a>
                     </h3>
                 </div>
 

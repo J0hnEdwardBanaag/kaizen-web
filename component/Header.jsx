@@ -13,15 +13,15 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 import logoImg from '../src/assets/kaizen-logo.png'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your data', href: '#', icon: ChartPieIcon },
-  { name: 'Metrics', description: 'Measure scientifically and accurately', href: '#', icon: EyeIcon },
-  { name: 'Security', description: 'Ensure the safety and security of your data', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Seamlessly connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'AI Automations', description: 'Harness the power of AI for strategic and efficient processes', href: '#', icon: CodeBracketIcon },
+  { name: 'Analytics', description: 'Get a better understanding of your data', href: '#product', icon: ChartPieIcon },
+  { name: 'Metrics', description: 'Measure scientifically and accurately', href: '#product', icon: EyeIcon },
+  { name: 'Security', description: 'Ensure the safety and security of your data', href: '#product', icon: FingerPrintIcon },
+  { name: 'Integrations', description: 'Seamlessly connect with third-party tools', href: '#product', icon: SquaresPlusIcon },
+  { name: 'AI Automations', description: 'Harness the power of AI for strategic and efficient processes', href: '#product', icon: CodeBracketIcon },
 ]
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Watch demo', href: 'https://dkmetrics.com/how-it-works/', icon: PlayCircleIcon },
+  { name: 'Contact sales', href: "#contact", icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
@@ -103,13 +103,13 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-sky-500">
+          <a href="#about" className="text-sm font-semibold leading-6 text-gray-900 hover:text-sky-500">
             About Us
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-sky-500">
             Blog
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-sky-500">
+          <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900 hover:text-sky-500">
             Contact & Support
           </a>
         </Popover.Group>
@@ -124,7 +124,7 @@ export default function Header() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">4488 Kaizen LLC</span>
               <img
                 className="h-8 w-auto"
                 src="https://img.icons8.com/external-phatplus-solid-phatplus/64/external-ai-computing-network-phatplus-solid-phatplus.png"
@@ -169,7 +169,7 @@ export default function Header() {
                   )}
                 </Disclosure>
                 <a
-                  href="#"
+                  href="#about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-sky-500"
                 >
                   About Us
@@ -183,7 +183,7 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="#contact"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-sky-500"
                 >
                   Contact & Support

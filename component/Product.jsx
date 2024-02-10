@@ -33,13 +33,13 @@ function ProductAndServices() {
 
     return (
 
-        <div class="">
+        <div class="" id="product">
             {/* mt-4 text-4xl font-extrabold tracking-tight text-slate-900 */}
             <div class="container mx-auto px-6 py-12">
                 <div className='text-center'>
                     <h1 class="text-4xl font-bold ">Some of Our Products and Services</h1>
                     <br />
-                    <p class="text-sm font-medium  mb-12 text-slate-500 "><strong>4488 Kaizen</strong> Specializes in the design and development of productivity tools for the manufacturing sector.</p>
+                    <p class="text-sm font-medium  mb-12 text-gray-500 "><strong>4488 Kaizen</strong> Specializes in the design and development of productivity tools for the manufacturing sector.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3  gap-6">
 

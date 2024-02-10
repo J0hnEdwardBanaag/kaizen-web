@@ -13,7 +13,7 @@ function Jumbotron() {
                     We are very proud to showcase our productivity tools for your current manufacturing environment. With us, your vision of bringing state-of-the-art technology to optimize your productivity is now a reality.
                 </p>
                 <div class=" space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-                    <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-semibold text-center text-white rounded-lg bg-sky-500 hover:bg-sky-800 focus:ring-4 focus:ring-blue-sky dark:focus:ring-sky-900">
+                    <a href="#about" class="inline-flex justify-center items-center py-3 px-5 text-base font-semibold text-center text-white rounded-lg bg-sky-500 hover:bg-sky-800 focus:ring-4 focus:ring-blue-sky dark:focus:ring-sky-900">
                        Let's Explore
 
                         {/* <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
