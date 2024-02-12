@@ -45,9 +45,9 @@ function About() {
                         At <strong>4488 Kaizen</strong>, we specialize in crafting exceptional, user-friendly products to ensure an unparalleled customer experience. Our approach is rooted in a steadfast commitment to innovation, collaborative teamwork, and the unwavering pursuit of excellence across all facets of our operations.
                     </p>
                     <div class="mt-auto py-2">
-                        <button className="text-base font-semibold text-indigo-600 hover:text-indigo-700" >
+                        <a className="text-base font-semibold text-indigo-600 hover:text-indigo-700" href='#contact' >
                             Contact Us Now
-                        </button>
+                        </a>
                     </div>
                 </div>
 
