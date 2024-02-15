@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .vercel
+.vs/slnx.sqlite
+.vs/slnx.sqlite
+.vs/slnx.sqlite

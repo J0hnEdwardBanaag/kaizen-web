@@ -13,11 +13,11 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 import logoImg from '../src/assets/kaizen-logo.png'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your data', href: '#product', icon: ChartPieIcon },
-  { name: 'Metrics', description: 'Measure scientifically and accurately', href: '#product', icon: EyeIcon },
-  { name: 'Security', description: 'Ensure the safety and security of your data', href: '#product', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Seamlessly connect with third-party tools', href: '#product', icon: SquaresPlusIcon },
-  { name: 'AI Automations', description: 'Harness the power of AI for strategic and efficient processes', href: '#product', icon: CodeBracketIcon },
+  { name: 'Power Platform Solutions', description: "Harnessing the full potential of Microsoft's Power Platform", href: '#product-product', icon: ChartPieIcon },
+  { name: 'Metrics and Analytics', description: 'Measure accurately to get a better understanding of your data with our Metrics tool', href: '#product', icon: EyeIcon },
+  { name: 'Web Development', description: 'Transform your digital presence with our Web Development services', href: '#product', icon: ChartPieIcon },
+  { name: 'Custom Software Development', description: 'Integrate custom software solution for your unique needs and goals', href: '#product', icon: CodeBracketIcon },
+  { name: 'System Integration', description: 'Optimize your operations with seamless System Integration', href: '#product', icon: SquaresPlusIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: 'https://dkmetrics.com/how-it-works/', icon: PlayCircleIcon },
@@ -32,11 +32,11 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="" style={{"background-color":"transparent"}}>
+    <header className="" style={{ "background-color": "transparent" }}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">4488 Kaizen</span>
             <img className="h-8 w-auto rounded shadow-lg" src={logoImg} alt="" />
             {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
           </a>
@@ -54,7 +54,7 @@ export default function Header() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:text-sky-500">
-              Product & Services
+             Product & Services
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
 
@@ -103,11 +103,9 @@ export default function Header() {
             </Transition>
           </Popover>
 
+
           <a href="#about" className="text-sm font-semibold leading-6 text-gray-900 hover:text-sky-500">
             About Us
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-sky-500">
-            Blog
           </a>
           <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900 hover:text-sky-500">
             Contact & Support
@@ -160,6 +158,7 @@ export default function Header() {
                             as="a"
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            onClick={() => setMobileMenuOpen(false)}
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -171,20 +170,16 @@ export default function Header() {
                 <a
                   href="#about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-sky-500"
-                >
+                  onClick={() => setMobileMenuOpen(false)}
+               >
                   About Us
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-sky-500"
-                >
-                  Blog
                 </a>
               </div>
               <div className="py-6">
                 <a
                   href="#contact"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-sky-500"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Contact & Support
                 </a>

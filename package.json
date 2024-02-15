@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://j0hnedwardbanaag.github.io/kaizen-web/",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
